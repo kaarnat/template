@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div style="width: 200px; height: 200px; background-color:  aqua; position: absolute;"
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <button>start</button>
+    <script src="jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("button").click(function () {
+                $("div").animate({ left: "200px", top: "200px", fontsize: "100px" })
+            })
+        })
+    </script>
+    <div>
+        <h1>welcome to nitin</h1>
+        <h2>with Jquery</h2>
+
+    </div>
+    <button id='gt'>get TEXT </button>
+    <button id='gh'>get HTML </button>
+    <button id='gh'>gv value </button>
+
+    <script src="jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#gt").click(function () {
+                $("div").text("welcome to nitin chaudhary")
+            })
+            $("#gh").click(function  () {
+                $("div").html("<h3>welcome to nitin chaudhary</h3>")
+            })
+            $("#gv").click(function () {
+                $("#demo").val("student")
+                // var data = $("#demo").val();
+                // console.log(data);
+                // if (data =="")}
+                //    alert("please fill this");
+                // }
+            })
+            $("#btn").click(function () {
+                alert("Res is" + $("#g1").attr('href'))
+            })
+        })
+
+            </script>
+    
+</body>
+</html>
